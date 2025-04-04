@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+a:hover {
+    color: pink !important;
+    text-decoration: none !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #343a40;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    flex-direction: row;
+    max-width: 400px;
+
+}
