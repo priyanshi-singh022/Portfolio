@@ -27,6 +27,10 @@ a:hover {
     text-decoration: none !important;
 }
 
+.navbar, .hero {
+    background: #343a40;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -37,7 +41,6 @@ a:hover {
     padding: 20px 50px;
     flex-wrap: wrap;
     gap: 20px;
-    background: #343a40;
 }
 
 .nav-item {
@@ -45,5 +48,32 @@ a:hover {
     font-weight: 500;
     flex-direction: row;
     max-width: 400px;
+}
 
+.contact-title {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    color: deeppink;
+    text-align: center;
+}
+
+.contact-title span {
+    color: #292929;
+    border-bottom: 5px solid #363636;
+}
+
+.mail-section {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    float: center;
+    margin: 0 auto;
+}
+
+.mail-section  input {
+    padding: 11px;
+    max-width: 100%;
+    border: 1px solid #343a40;
 }
