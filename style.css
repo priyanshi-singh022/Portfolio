@@ -70,22 +70,27 @@ a:hover {
 }
 
 /*  services section */
+.services {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .services-list {
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 50px;
     margin-top: 100px;
 }
 .service-item {
     border: 5px solid #343a40;
     border-radius: 150px;
-    padding: 20px;
+    padding: 70px 25px 20px 25px;
     margin: 20px;
-    width: 300px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     text-align: center;
 
@@ -98,6 +103,11 @@ a:hover {
     transition: all ease;
 }
 
+/* Portfolio section */ 
+.portfolio {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 
 
