@@ -61,10 +61,6 @@ html {
     transition: all 0.3s ease;
 }
 
-.menu-icon.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-}
-
 #theme-toggle {
     display: inline-flex;
     align-items: center;    
@@ -310,14 +306,19 @@ img:hover {
 
 /* Dark theme section */ 
 
-h1.dark-theme {
-    color: deeppink;
+body.dark-theme h1 {
+    color: #f5c729;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
-p.dark-theme {
+body.dark-theme h1 span {
+    color: #fff;
+    border-bottom: 5px solid #fff;
+}
+
+body.dark-theme p {
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -326,7 +327,7 @@ p.dark-theme {
 
 body.dark-theme::before {
     content: "";
-    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("Images/twilight.png");
     background-size: cover;
     background-position: center;
     position: fixed;
