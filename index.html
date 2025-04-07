@@ -6,10 +6,16 @@
     <title>Portfolio</title>
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!-- Header Section -->
         <div class="header">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="navbar">
                 <div class="nav-item">
                     <a href="index.html">Home</a>
@@ -30,13 +36,13 @@
         </div>
 
         <!-- Hero Section -->
-         <div class="hero">
+         <div class="hero portion">
             <h1>Priyanshi Singh</h1>
             <p>Web Developer</p>
          </div>
 
          <!-- Services Section -->
-         <div class="services">
+         <div class="services portion" role="services">
             <div>
                 <h1 class="heading">My <span class="heading-title">Services</span></h1>
             </div>
@@ -56,7 +62,7 @@
          </div>
         
          <!-- Portfolio Section-->
-          <div class="portfolio">
+          <div class="portfolio portion" role="portfolio">
             <div class="portfolio-header">
                 <h1 class="heading">My <span class="heading-title">Portfolio</span></h1>
             </div>
@@ -79,7 +85,7 @@
           </div>
 
           <!-- Contact Section-->
-           <div class="contact-section">
+           <div class="contact-section portion">
                 <div class="contact-header">
                     <h1 class="heading">My <span class="heading-title">Contact</span></h1>
                 <p>now</p>
@@ -92,12 +98,16 @@
                         <br>
                         <input type="number" id="number" name="number" placeholder="Your Phone Number" required><br>
                         <br>
-                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your Message" required></textarea><br>
+                        <textarea id="message" name="message" rows="4" cols="79" placeholder="Your Message" required></textarea><br>
                         <br>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
            </div>
         
+
+
+           <!-- javascript file-->
+    <script src="script.js"></script>
 </body>
 </html>
