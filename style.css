@@ -65,7 +65,7 @@ html {
     transform: rotate(45deg) translateY(8px);
 }
 
-.theme-icon {
+#theme-toggle {
     display: inline-flex;
     align-items: center;    
     justify-content: center;    
