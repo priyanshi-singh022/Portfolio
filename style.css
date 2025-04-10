@@ -9,7 +9,7 @@ html {
 
 /* header section */
 .header {
-    background-color: #343a40;
+    background-color: #128a7d;
     height: 60px;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #343a40;
+    background-color: #128a7d;
     padding:20px 20px;
 }
 
@@ -36,9 +36,8 @@ html {
 }
 
 .nav-item a:hover {
-    color: deeppink; 
+    border-bottom: 2px solid #fff;
 }
-
 
 /*menu icon */
 .menu-icon {
@@ -109,8 +108,8 @@ video {
 }
 
 .heading span {
-    color: #292929;
-    border-bottom: 5px solid #363636;
+    color: #128a7d;
+    border-bottom: 2px solid deeppink;
 }
 
 
@@ -142,7 +141,7 @@ video {
 }
 
 .service-item:hover {
-    color: #ff1493;
+    color: deeppink;
     border-color: deeppink;
     box-shadow: 0 0 10px deeppink;
     transition: all ease;
@@ -271,7 +270,6 @@ img:hover {
         top: 60px;
         right: 0;
         width: 50%;
-        background-color: #343a40;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         padding-bottom: 20px;
