@@ -7,7 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* header section */
 .header {
     background-color: #128a7d;
     height: 60px;
@@ -335,7 +334,41 @@ img:hover {
 
 
 
+
+/* --------------------------------------------------------------------------------------------------*/
+
 /* Dark theme section */ 
+
+body.dark-theme .header {
+    background-color: #343a40;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+body.dark-theme .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #343a40;
+    padding:20px 20px;
+}
+
+body.dark-theme .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.1s ease;
+}
+
+body.dark-theme .nav-item a:hover {
+    color: #f5c729;
+}
 
 body.dark-theme h1 {
     color: #f5c729;
