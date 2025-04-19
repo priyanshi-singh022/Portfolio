@@ -130,8 +130,8 @@ video {
 
 .service-item {
     border: 2px solid #343a40;
-    border-radius: 50%;
-    padding: 25px 25px 20px 25px;
+    border-radius: 30%;
+    padding: 40px 25px 20px 25px;
     margin: 20px;
     width: 250px;
     height: 250px;
@@ -252,6 +252,17 @@ img:hover {
     resize: none; /* Disable resizing of the textarea */
     height: 120px; /* Set a fixed height for the textarea */
     margin-bottom: 10px; /* Add some space below the textarea */
+}
+
+
+.footer {
+    background-image: url("Images/Blue Futuristic Technology LinkedIn Background Photo.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    bottom: 0;
+
 }
 
 
