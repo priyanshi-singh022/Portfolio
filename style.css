@@ -118,6 +118,20 @@ video {
 }
 
 /*  services section */
+
+.glass-box {
+      width: 300px;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1); /* Transparent white */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Blur */
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      text-align: center;
+}
+
 .services-list {
     max-width: 100%;
     display: flex;
