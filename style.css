@@ -119,19 +119,6 @@ video {
 
 /*  services section */
 
-.glass-box {
-      width: 300px;
-      padding: 30px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.1); /* Transparent white */
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px); /* Blur */
-      -webkit-backdrop-filter: blur(10px); /* Safari */
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-      text-align: center;
-}
-
 .services-list {
     max-width: 100%;
     display: flex;
@@ -141,6 +128,34 @@ video {
     padding: 50px;
     margin-top: 100px;
 }
+
+.glass-box {
+      width: 250px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1); /* Transparent white */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Blur */
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      text-align: center;
+      overflow: hidden;
+
+}
+
+.glass-box:hover {
+    color: gold;
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+    transition: all ease;
+}
+
 
 .service-item {
     border: 2px solid #343a40;
@@ -153,18 +168,18 @@ video {
     text-align: center;
 }
 
-.service-item:hover {
-    color: deeppink;
-    border-color: deeppink;
-    box-shadow: 0 0 10px deeppink;
-    transition: all ease;
-}
 
-.service-item img {
-    max-width: 70px;
-    height: auto;
+/* services details */ 
+.service-details {
+    background-image: url("Images/blue-shade-girl.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
 /* Portfolio section */ 
 
 .portfolio-list {
