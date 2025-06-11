@@ -11,28 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.querySelector("#theme-toggle");
-    const body = document.body;
+d
+// scroll to top functionality 
+// Show the button after scrolling down 100px
+window.onscroll = function () {
+  const btn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
 
-    // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        body.classList.add(savedTheme); // Apply the saved theme
-    } else {
-        body.classList.add("light-theme"); // Default theme
-    }
-
-    themeToggle.addEventListener("click", () => {
-        if (body.classList.contains("light-theme")) {
-            body.classList.remove("light-theme");
-            body.classList.add("dark-theme");
-            localStorage.setItem("theme", "dark-theme"); // Save light theme
-        } else {
-            body.classList.remove("dark-theme");
-            body.classList.add("light-theme");
-            localStorage.setItem("theme", "light-theme"); // Save dark theme
-        }
-    });
+// Scroll to top when clicked
+document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
-

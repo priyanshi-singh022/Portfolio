@@ -6,14 +6,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+ 
 .header {
-    background-color: #128a7d;
-    height: 60px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
+    width: 80%;
+    border-radius: 20%;
 }
 
 .navbar {
@@ -59,19 +55,8 @@ html {
     transition: all 0.3s ease;
 }
 
-#theme-toggle {
-    display: inline-flex;
-    align-items: center;    
-    justify-content: center;    
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure the theme icon is above other elements */   
-    position: relative;
-}
- 
 body {
-    color: #666666;
+    color: #fff;
     font-size: 14px;
     line-height: 1.80857;
     font-weight: normal;
@@ -79,9 +64,67 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-video {
-    display: none;
+body video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} 
+
+/* scroll button section */ 
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
 }
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+
+ /* ----All Parts-------------------------------------------------------------- */
+
+/* Heading section */
+.heading {
+    width: 100%;
+    float: left;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.heading span {
+    color: white;
+    border-bottom: 2px solid gold;
+}
+
+
+.portion {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+ /* Hero section */
 
 .hero {
     background-image: url("");
@@ -101,14 +144,14 @@ video {
     height: 100px;
     font-size: 40px;
     font-weight: bold;
-    color: deeppink;
+    color: gold;
     text-align: center;
     margin: 10px 10px;
 }
 
 .heading span {
-    color: #128a7d;
-    border-bottom: 2px solid deeppink;
+    color: white;
+    border-bottom: 2px solid gold;
 }
 
 
@@ -117,26 +160,24 @@ video {
     margin-bottom: 100px;
 }
 
+/* ------------------------------------------------------------------ */
+
 /*  services section */
 
 .services-list {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
     margin-top: 100px;
+    gap: 30px;
 }
 
 .glass-box {
       width: 250px;
       height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.1); /* Transparent white */
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -157,18 +198,6 @@ video {
 }
 
 
-.service-item {
-    border: 2px solid #343a40;
-    border-radius: 30%;
-    padding: 40px 25px 20px 25px;
-    margin: 20px;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    text-align: center;
-}
-
-
 /* services details */ 
 .service-details {
     background-image: url("Images/blue-shade-girl.png");
@@ -180,6 +209,11 @@ video {
     align-items: center;
     text-align: center;
 }
+
+
+
+/* -------------------------------------------------------------- */
+
 /* Portfolio section */ 
 
 .portfolio-list {
@@ -210,20 +244,16 @@ img:hover {
     transition: all 0.3s ease;
 }
 
+/* ---------------------------------------------------------------------- */ 
 
 /* Form section */
 .contact-section {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    flex-direction: column;
     height: 100vh; /* Full viewport height */
     padding: 20px; /* Add padding for spacing */
     flex-wrap: wrap;
-}
-
-.contact-header, .contact-form {
-    width: 100%;
 }
 
 .contact-form {
@@ -243,18 +273,21 @@ img:hover {
 .mail-section  input,
 .mail-section textarea {
     border-radius: 10px;
+    color: #fff;
     padding: 20px;
     width: 100%;    /* make inputs take full width of the container */
     max-width: 600px;     /* set a max width for lorger screens */
-    border: 1px solid #343a40;
     box-sizing: border-box;    
     margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur */
+    -webkit-backdrop-filter: blur(20px); /* Safari */
 }
 
 .mail-section  input:focus, textarea:focus {
-    border: 1px solid deeppink;
+    border: 1px solid gold;
     outline: none;
-    box-shadow: 0 0 10px deeppink;
+    box-shadow: 0 0 10px gold;
 }
 
 .mail-section input[type="submit"] {
@@ -272,17 +305,20 @@ img:hover {
 }
 
 .mail-section input[type="submit"]:hover {
-    background-color: #ff1493;
-    color: #fff;
-    box-shadow: 0 0 10px deeppink;
+    background-color: gold;
+    color: #000;
+    box-shadow: 0 0 10px gold;
     transition: all ease;
 }
+
 .mail-section textarea {
     resize: none; /* Disable resizing of the textarea */
     height: 120px; /* Set a fixed height for the textarea */
     margin-bottom: 10px; /* Add some space below the textarea */
 }
 
+
+/* ---------------------------------------------------------------- */
 
 .footer {
     background-image: url("Images/Blue Futuristic Technology LinkedIn Background Photo.png");
@@ -337,11 +373,6 @@ img:hover {
         align-items: center;
     }
 
-    .service-item {
-        width: 80%;
-        margin: 10px 0;
-    }
-
     .portfolio-list {
         flex-direction: column;
         align-items: center;
@@ -375,96 +406,6 @@ img:hover {
 
 
 
-/* --------------------------------------------------------------------------------------------------*/
 
-/* Dark theme section */ 
 
-body.dark-theme .header {
-    background-color: #343a40;
-    height: 60px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-}
 
-body.dark-theme .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #343a40;
-    padding:20px 20px;
-}
-
-body.dark-theme .nav-item a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.1s ease;
-}
-
-body.dark-theme .nav-item a:hover {
-    color: #f5c729;
-}
-
-body.dark-theme h1 {
-    color: #f5c729;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-body.dark-theme h1 span {
-    color: #fff;
-    border-bottom: 5px solid #fff;
-}
-
-body.dark-theme p {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    margin: 20px 0;
-}
-
-body.dark-theme .nav-item a:hover {
-    color: #f5c729; 
-}
-
-body.dark-theme video {
-    display: block;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-body.dark-theme .service-item {
-    border: 2px solid #9ea9b4;
-    color: #d3d9df;
-}
-
-body.dark-theme .service-item:hover {
-    color: #f5c729;
-    border-color: #f5c729;
-    box-shadow: 0 0 10px #f5c729;
-    transition: all ease;
-}
-
-body.dark-theme .mail-section input[type="submit"]:hover {
-    background-color: #f5c729;
-    opacity: 1;
-    color: #292929;
-    box-shadow: 0 0 5px #f5c729;
-    transition: all ease;
-}
-
-body.dark-theme .mail-section  input:focus, textarea:focus {
-    border: 1px solid #1e2fc9;
-    outline: none;
-    box-shadow: 0 0 5px #1e2fc9;
-}
