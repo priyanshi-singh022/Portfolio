@@ -135,6 +135,25 @@ body video {
     padding: 50px 0 50px 0;
 }
 
+img {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.glass-box {
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1); /* Transparent white */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Blur */
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      text-align: center;
+      overflow: hidden;
+
+}
+
 /* ---------------------------------------------------------------------------------- */
 
  /* Hero section */
@@ -205,46 +224,34 @@ body video {
     gap: 30px;
 }
 
-.glass-box {
-      width: 250px;
-      height: 200px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.1); /* Transparent white */
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px); /* Blur */
-      -webkit-backdrop-filter: blur(10px); /* Safari */
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-      text-align: center;
-      overflow: hidden;
-
+.service-1,
+.service-2, 
+.service-3,
+.service-4 {
+    width: 250px;
+    height: 200px;
 }
 
-.glass-box:hover {
+
+.service-1:hover,
+.service-2:hover, 
+.service-3:hover,
+.service-4:hover{
     color: gold;
     border-color: gold;
     box-shadow: 0 0 10px gold;
-    transition: all ease;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
-
-
-/* services details */ 
-.service-details {
-    background-image: url("Images/blue-shade-girl.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
 
 /* -------------------------------------------------------------- */
 
 /* Portfolio section */ 
+
+.portfolio {
+    background: radial-gradient(circle at center, #2b0a44, #000000 80%);
+
+}
 
 .portfolio-list {
     max-width: 100%;
@@ -261,18 +268,75 @@ body video {
 
 .portfolio-item {
     text-align: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;   
 }
 
-img {
-    width: 400px;
-    height: 100%;
-    border-radius: 10px;
+.portfolio-cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.portfolio img:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+.portfoliop-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+  transition: 0.3s ease;
+  backdrop-filter: blur(12px);
+  position: relative;
 }
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.portfolio-card .icon {
+  font-size: 24px;
+  background-color: #6e00ff;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.info-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.info-card a {
+  text-decoration: none;
+  color: #9f5fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 
 /* ---------------------------------------------------------------------- */ 
 
@@ -350,17 +414,30 @@ img {
 
 /* ---------------------------------------------------------------- */
 
+/* Footer section */
 .footer {
-    background-image: url("Images/Blue Futuristic Technology LinkedIn Background Photo.png");
+    background-image: url("Images/Footer.png");
     background-size: cover;
     background-position: center;
-    height: 60vh;
-    display: flex;
-    bottom: 0;
-
+    height: 100vh;
 }
 
+.footer-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px 0;
+}
 
+.footer-1, .footer-2, .footer-3 {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+}
 
 /* responsive view */
 @media (max-width: 768px) {
