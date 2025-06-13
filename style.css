@@ -11,7 +11,7 @@ html {
     border-radius: 20%;
     display: flex;
     justify-self: center;
-    margin-top: 15px;;
+    margin-top: 15px;
 }
 
 .navbar {
@@ -26,7 +26,8 @@ html {
     backdrop-filter: blur(10px); /* Blur */
     -webkit-backdrop-filter: blur(10px); /* Safari */
     border: 1px solid rgba(255, 255, 255, 0.2);
-}
+
+} 
 
 .nav-item a {
     text-decoration: none;
@@ -67,9 +68,7 @@ body {
     color: #fff;
     font-size: 14px;
     line-height: 1.80857;
-    font-weight: normal;
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
     left: 0;
     right: 0;
     margin: 0;
@@ -108,9 +107,12 @@ body video {
   background-color: #555;
 }
 
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
 
  /* ----All Parts-------------------------------------------------------------- */
-
 /* Heading section */
 .heading {
     width: 100%;
@@ -128,11 +130,8 @@ body video {
     border-bottom: 2px solid gold;
 }
 
-
 .portion {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 100px 0;
 }
 
 img {
@@ -142,7 +141,6 @@ img {
 }
 
 .glass-box {
-      border-radius: 20px;
       background: rgba(255, 255, 255, 0.1); /* Transparent white */
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px); /* Blur */
@@ -151,11 +149,10 @@ img {
       color: white;
       text-align: center;
       overflow: hidden;
-
 }
 
-/* ---------------------------------------------------------------------------------- */
 
+/* ---------------------------------------------------------------------------------- */
  /* Hero section */
 
 .hero {
@@ -164,13 +161,12 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px 20px 40px;;
+    padding: 0 20px 0 40px;;
     margin: 0;
 }
 
 .hero-intro { 
-    padding: 0 40px 0 40px;
-    margin: 0;;
+    margin: 0;
     text-align: start; 
     display: flex;
     flex-direction: column;
@@ -181,7 +177,6 @@ img {
     z-index: 1; /* Ensure the intro is above the video */
     overflow: hidden; /* Prevents overflow of content */
     max-width: 1200px; /* Limit the width for larger screens */
-    box-sizing: border-box; /* Ensures padding is included in width */
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }  
@@ -191,26 +186,25 @@ img {
     font-size: 20px;
     line-height: 1.5;
     color: #fff;
+    
 }
 
 .hero-img {
-    margin: 0 40px -10px 40px;
     padding-bottom: 0px;
 }
 
 /* ------------------------------------------------------------------ */
-
 /*  services section */
 
 .services {
     background-image: url("Images/service-bg.png");
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     padding: 50px 0 50px 0;
     box-sizing: border-box;
     background-position: center;
     height: 100vh;
     right: 0;
-    left: 0;
+    left: 0; 
 }
 
 .services-list {
@@ -229,9 +223,13 @@ img {
 .service-3,
 .service-4 {
     width: 250px;
-    height: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 120px 50px 120px 50px;
 }
-
 
 .service-1:hover,
 .service-2:hover, 
@@ -240,103 +238,60 @@ img {
     color: gold;
     border-color: gold;
     box-shadow: 0 0 10px gold;
-    transform: scale(1.1);
+    
     transition: all 0.3s ease;
+    animation: tilt-shaking 0.25s ease-in-out;
 }
 
-/* -------------------------------------------------------------- */
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
 
+/* --------------------------------------------------------------------- */
 /* Portfolio section */ 
 
 .portfolio {
     background: radial-gradient(circle at center, #2b0a44, #000000 80%);
-
-}
-
-.portfolio-list {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px 25px 20px 25px;
-    overflow: hidden;
-    text-align: center;
-    margin: 30px 30px 30px 30px;
-}
-
-.portfolio-item {
-    text-align: center;
-    width: 300px;
-    height: 300px;
+    height: 125vh;
+    padding: 50px 0;
+    box-sizing: border-box;
     position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;   
+    overflow: hidden; /* Prevents overflow of content */
 }
 
 .portfolio-cards {
-  display: flex;
-  gap: 20px;
-  padding: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.portfoliop-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
-  transition: 0.3s ease;
-  backdrop-filter: blur(12px);
-  position: relative;
+.portfolio-card {
+    width: 250px;
+    height: 250px;
+    color: #fff; 
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+    transition: 0.3s ease;
+    backdrop-filter: blur(12px);
+    position: relative;
 }
 
 .portfolio-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+    transform: translateY(-10px);
+    border-color: deeppink;
+    box-shadow: 0 0 10px deeppink;
+    transition: all 0.3s ease;  
+    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 182, 193, 0.08));
 }
-
-.portfolio-card .icon {
-  font-size: 24px;
-  background-color: #6e00ff;
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.info-card h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  color: #ffffff;
-}
-
-.info-card p {
-  font-size: 14px;
-  color: #cccccc;
-  margin-bottom: 15px;
-}
-
-.info-card a {
-  text-decoration: none;
-  color: #9f5fff;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 
 /* ---------------------------------------------------------------------- */ 
 
@@ -382,6 +337,8 @@ img {
     border: 1px solid gold;
     outline: none;
     box-shadow: 0 0 10px gold;
+    transform: scale(1.1);
+    transition: all ease;
 }
 
 .mail-section input[type="submit"] {
@@ -429,7 +386,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .footer-1, .footer-2, .footer-3 {
