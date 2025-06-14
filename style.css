@@ -371,7 +371,6 @@ img {
     margin-bottom: 10px; /* Add some space below the textarea */
 }
 
-
 /* ---------------------------------------------------------------- */
 
 /* Footer section */
@@ -403,6 +402,16 @@ img {
     backdrop-filter: blur(10px); /* Blur */
     -webkit-backdrop-filter: blur(10px); /* Safari */   
 }
+
+
+/* About us Page */ 
+.about {
+    height: 100vh;
+    margin: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 
 /* responsive view */
 @media (max-width: 768px) {
