@@ -40,7 +40,7 @@ html {
 
 .nav-item a:hover {
     border-bottom: 2px solid deeppink;
-    color: deeppink;  
+    color: #fff;  
 }
 
 /*menu icon */
@@ -337,9 +337,9 @@ img {
 }
 
 .mail-section  input:focus, textarea:focus {
-    border: 1px solid gold;
+    border: 1px solid deeppink;
     outline: none;
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 10px deeppink;
     transform: scale(1.1);
     transition: all ease;
 }
@@ -405,7 +405,7 @@ img {
 
 
 /* About us Page */ 
-.about {
+.about, .service-page, .portfolio-page {
     height: 100vh;
     margin: 50px;
     padding: 20px;
