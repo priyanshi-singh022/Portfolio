@@ -198,8 +198,10 @@ img {
 
 .services {
     background-image: url("Images/service-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 50px;
-    padding: 70px 0 50px 0;
+    padding: 90px 0 50px 0;
     box-sizing: border-box;
     background-position: center;
     height: 130vh;
@@ -218,32 +220,58 @@ img {
     gap: 30px;
 }
 
-.services-list h2 {
-    padding: 30px;
-    font-size: 20px;
+.service-item {
+    width: 250px;
+    height: 200px;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 120px 50px 120px 50px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.service-item span {
+    position: absolute;
+    transition: opacity 0.3s ease;
+    padding: 50px;
+    font-size: 18px;
     font-weight: bold;  
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Poppins', sans-serif;
 }
 
-.service-item {
-    width: 250px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 120px 50px 120px 50px;
+.default-text {
+    opacity: 1;
+}
+
+.hover-text {
+    opacity: 0;
+}
+
+/* Change text on hover */
+.service-item:hover .default-text {
+    opacity: 0;
+}
+
+.service-item:hover .hover-text {
+    opacity: 1;
+    font-size: 14px;
 }
 
 .service-item:hover{
     color: gold;
     border-color: gold;
     box-shadow: 0 0 10px gold;
-    
     transition: all 0.3s ease;
     animation: tilt-shaking 0.25s ease-in-out;
 }
@@ -255,6 +283,7 @@ img {
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
 
 /* --------------------------------------------------------------------- */
 /* Portfolio section */ 
@@ -371,6 +400,7 @@ img {
     margin-bottom: 10px; /* Add some space below the textarea */
 }
 
+
 /* ---------------------------------------------------------------- */
 
 /* Footer section */
@@ -449,19 +479,48 @@ img {
         font-size: 16px;
     }
 
+
+    /* Hero section */
+    .hero-img {
+        display: none; /* Hide hero image on smaller screens */
+    }
+    .hero-intro {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+    .hero-intro p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding-right: 0; /* Remove right padding */
+    }
+    /* Services and Portfolio sections */
+    .services {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+    .portfolio {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+    .services-list, .portfolio-cards {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .service-item, .portfolio-card {
+        margin-bottom: 20px; /* Add space between items */
+    }
+    .service-item img, .portfolio-card img {
+        background-repeat: no-repeat;
+    }
+
     .services-list {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .portfolio-list {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }
-
-    img {
-        width: 90%;
-        height: auto; /* Maintain aspect ratio */
     }
 
     .mail-section {
