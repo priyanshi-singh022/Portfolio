@@ -196,7 +196,7 @@ img {
 /* ------------------------------------------------------------------ */
 /*  services section */
 
-.services {
+#services {
     background-image: url("Images/service-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,7 +223,6 @@ img {
 .service-item {
     width: 250px;
     height: 200px;
-    padding: 15px 30px 15px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,25 +232,24 @@ img {
     position: relative;
     background: rgba(255, 255, 255, 0.05);
     color: white;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 .service-item span {
     position: absolute;
-    transition: opacity 0.3s ease;
     padding: 50px;
-    font-size: 18px;
     font-weight: bold;  
     text-align: center;
     width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Poppins', sans-serif;
+    transition: opacity 0.1s ease;
 }
 
 .default-text {
     opacity: 1;
+    font-size: 18px;
 }
 
 .hover-text {
