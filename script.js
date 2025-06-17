@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-d
+
 // scroll to top functionality 
 // Show the button after scrolling down 100px
 window.onscroll = function () {
