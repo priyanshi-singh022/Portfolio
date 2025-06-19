@@ -153,6 +153,7 @@ img {
       border: 1px solid rgba(255, 255, 255, 0.2);
       text-align: center;
       overflow: hidden;
+      border-radius: 20px;
 }
 
 .glass-box-black {
@@ -171,7 +172,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px 0 40px;;
+    padding: 0 20px 0 40px;
     margin: 0;
 }
 
@@ -188,6 +189,7 @@ img {
     overflow: hidden; /* Prevents overflow of content */
     max-width: 1200px; /* Limit the width for larger screens */
     font-weight: 300;
+    padding-left: 40px;
 }  
 
 .hero-intro p {
@@ -199,32 +201,36 @@ img {
 }
 
 .hero-img {
-    padding-bottom: 0px;
+    padding: 0 50px 0 0;
+    margin: 0;
+    display: block;
 }
 
 /* ------------------------------------------------------------------ */
 /*  services section */
 
 #services {
-    background-image: url("Images/service-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-bottom: 50px;
-    padding: 40px 0 50px 0;
+    padding: 40px 0 40px 0;
     box-sizing: border-box;
-    background-position: center;
-    height: 130vh;
+    height: 120vh;
     right: 0;
     left: 0; 
 }
 
+.service-bg {
+    background-image: url("Images/service2-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .services-list {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 80px 50px;
+    padding: 60px 50px;
     margin-top: 100px;
     gap: 30px;
 }
@@ -499,10 +505,28 @@ img {
 
 /* About us Page */ 
 .about, .service-page, .portfolio-page, .contact-page {
-    height: 120vh;
     margin: 50px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.about-content {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+    font-weight: bold;        
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.about-content img {
+    border-radius: 10px;
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-left: 20px;
 }
 
 
