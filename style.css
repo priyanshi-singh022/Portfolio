@@ -21,10 +21,6 @@ html {
     gap: 20px;
     padding:10px 20px;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Transparent white */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari */
     border: 1px solid rgba(255, 255, 255, 0.2);
 
 } 
@@ -41,6 +37,10 @@ html {
 .nav-item a:hover {
     border-bottom: 2px solid deeppink;
     color: #fff;  
+}
+
+.nav-item a:active {
+    color: deeppink;
 }
 
 /*menu icon */
@@ -73,6 +73,9 @@ body {
     right: 0;
     margin: 0;
     padding: 0;
+    font-family: "Molle", cursive,'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: bold;
 }
 
 body video {
@@ -118,20 +121,22 @@ a {
     width: 100%;
     float: left;
     height: 100px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    color: gold;
+    color: deeppink;
     text-align: center;
     margin: 10px 10px;
+    font-family: 'Caveat';
+    font-style: normal;
 }
 
 .heading span {
     color: white;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid deeppink;
 }
 
 .portion {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 80px 0;
 }
 
 img {
@@ -146,11 +151,16 @@ img {
       backdrop-filter: blur(10px); /* Blur */
       -webkit-backdrop-filter: blur(10px); /* Safari */
       border: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
       text-align: center;
       overflow: hidden;
 }
 
+.glass-box-black {
+    background: rgba(0, 0, 0, 0.5); /* Transparent white */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blur */
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+}
 
 /* ---------------------------------------------------------------------------------- */
  /* Hero section */
@@ -177,7 +187,6 @@ img {
     z-index: 1; /* Ensure the intro is above the video */
     overflow: hidden; /* Prevents overflow of content */
     max-width: 1200px; /* Limit the width for larger screens */
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }  
 
@@ -201,7 +210,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
-    padding: 90px 0 50px 0;
+    padding: 40px 0 50px 0;
     box-sizing: border-box;
     background-position: center;
     height: 130vh;
@@ -215,7 +224,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 80px 50px;
     margin-top: 100px;
     gap: 30px;
 }
@@ -243,7 +252,6 @@ img {
     text-align: center;
     width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Poppins', sans-serif;
     transition: opacity 0.1s ease;
 }
 
@@ -267,13 +275,13 @@ img {
 }
 
 .service-item:hover{
-    color: gold;
-    border-color: gold;
-    box-shadow: 0 0 10px gold;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 10px #fff;
     transition: all 0.3s ease;
     animation: tilt-shaking 0.20s ease-in-out;
     animation-direction: alternate;
-    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 182, 193, 0.08));
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
     border-radius: 20px;
     transform: scale(1.05);
     z-index: 1; /* Ensure the hovered item is above others */
@@ -292,7 +300,10 @@ img {
 /* Portfolio section */ 
 
 .portfolio {
-    background: radial-gradient(circle at center, #2b0a44, #000000 80%);
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;       
+    background-position: center;
     height: 125vh;
     padding: 50px 0;
     box-sizing: border-box;
@@ -315,37 +326,49 @@ img {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
     transition: 0.3s ease;
     backdrop-filter: blur(12px);
     position: relative;
+    overflow: hidden; /* Prevents overflow of content */
 }
 
 .portfolio-card:hover {
     transform: translateY(-10px);
-    border-color: deeppink;
-    box-shadow: 0 0 10px deeppink;
+    border-color: #fff;
+    box-shadow: 0 0 10px #fff;
     transition: all 0.3s ease;  
-    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 182, 193, 0.08));
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
 }
 
 /* ---------------------------------------------------------------------- */ 
 
 /* Contact section */
-.contact-section {
-    background: radial-gradient(circle at center, #2b0a44, #000000 80%);
+.contact-bg {
+    background-image: url("Images/contact-bg.png");
 }
 
 .contact-info,
 .contact-form {
   display: flex;
   flex-direction: column; /* Stack children vertically */
+  min-width: 200px;
 }
+
+.contact-info {
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}   
+
 .contact {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    padding: 20px 40px;
     align-items: center;
     flex-direction: row;
     gap: 2rem; /* Space between contact info and form */
@@ -360,7 +383,13 @@ img {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
+    top: 0;
     margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the text is above other elements */
 }
 
 .contact-form {
@@ -370,6 +399,7 @@ img {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 40px;;
 }
 
 .mail-section {
@@ -390,7 +420,6 @@ img {
     border-radius: 40px;
     outline: none;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #fff;
     padding: 20px 30px;
@@ -400,9 +429,9 @@ img {
 }
 
 .mail-section  input:focus, textarea:focus {
-    border: 1px solid deeppink;
+    border: 1px solid #fff;
     outline: none;
-    box-shadow: 0 0 10px deeppink;
+    box-shadow: 0 0 10px #fff;
     transform: scale(1.1);
     transition: all ease;
 }
@@ -439,7 +468,7 @@ img {
 
 /* Footer section */
 .footer {
-    background-image: url("Images/Footer.png");
+    background-image: url("");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -469,8 +498,8 @@ img {
 
 
 /* About us Page */ 
-.about, .service-page, .portfolio-page {
-    height: 100vh;
+.about, .service-page, .portfolio-page, .contact-page {
+    height: 120vh;
     margin: 50px;
     padding: 20px;
     box-sizing: border-box;

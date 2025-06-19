@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <title>Portfolio</title>
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Molle&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,12 +23,15 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="navbar">
+            <div class="navbar glass-box-black">
                 <div class="nav-item">
                     <a href="index.html">Home</a>
                 </div>
                 <div class="nav-item">
                     <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-item">
+                    <a href="services.html">Expertise</a>
                 </div>
                 <div class="nav-item">
                     <a href="portfolio.html">Portfolio</a>
@@ -36,27 +44,36 @@
 
 
     <!-- Contact Section-->
-    <div class="contact-section portion" role="contact">
-        <div class="contact-header">
-            <h1 class="heading">My <span class="heading-title">Contact</span></h1>
-        </div>
-        <div class="contact-form">
-            <form class="mail-section" action="https://formsubmit.co/priyanshisingh0222@gmail.com" method="post">
-                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
-                <br>
-                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-                <br>
-                <input type="number" id="number" name="number" placeholder="Your Phone Number" required><br>
-                <br>
-                <textarea id="message" name="message" rows="4" cols="79" placeholder="Your Message" required></textarea><br>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-   </div>
+    <div class="contact-section portion">
+                  
+                <div class="contact">
+                    <div class="contact-info">
+                        <p>Feel free to reach out for collaborations, project inquiries, or just to say hello!</p>
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:priyanshisingh022@gmail.com">Priyanshi Singh <a>
+                            <li><strong>Phone:</strong> <a href="tel:+919467309879">+91 9467309879</a></li>
+                            <li><strong>Location:</strong> <a href="https://g.co/kgs/UMjdyZo" target="_blank">Karnal, Haryana, India</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyanshi-singh-27980a271/" target="_blank">Priyanshi Singh</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github/pikupika" target="_blank">pikupika</a></li>
+                            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/priyanshi_singh0802?igsh=MWZmbjE0YWxwdjFjMw==" target="_blank">priyanshi_singh0802</a></li>
+                            <li><strong>Twitter:</strong> <a href="https://x.com/Priyu42662521" target="_blank">Priyanshi Singh</a></li>
+                            </a>
+                        </ul>
+                    </div> 
+                    <div class="contact-form">
+                        <form class="mail-section" action="https://formsubmit.co/priyanshisingh0222@gmail.com" method="post">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>             
+                            <input type="text" id="number" name="number" placeholder="Your Phone Number" required>
+                            <textarea id="message" name="message" rows="4" cols="79" placeholder="Your Message" required></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+           </div>
 
    <video autoplay muted loop class="bg-video">
-            <source src="videos/keyboardonly.mp4" type="video/mp4">
+            <source src="videos/contact-bg2.mp4" type="video/mp4">
     </video>
 
    <!-- javascript file-->
