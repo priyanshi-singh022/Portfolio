@@ -527,6 +527,9 @@ img {
     width: 600px;
     height: auto;
     margin-left: 20px;
+    padding-right: 0;
+    margin-right: 0;
+    position: relative;
 }
 
 
