@@ -548,6 +548,9 @@ img {
     font-size: 40px;
 }
 
+.portfolio-page p {
+    font-size: 20px;
+}
 /* responsive view */
 @media (max-width: 768px) {
     .menu-icon {
