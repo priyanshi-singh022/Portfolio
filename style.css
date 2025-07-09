@@ -197,7 +197,6 @@ img {
     color: deeppink;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
-    margin: 0;
 }
 
 .hero-intro h2 {
@@ -545,6 +544,9 @@ img {
 
 
 /* Portfolio Page */
+.portfolio-page {
+    color: #000;
+}
 .portfolio-page h3 {
     font-size: 40px;
 }
