@@ -6,7 +6,16 @@
 html {
     scroll-behavior: smooth;
 }
- 
+
+body {
+    color: #fff;
+    background-color: #123458;
+    font-size: 14px;
+    font-family: "Molle", cursive, 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
 .header {
     border-radius: 20%;
     display: flex;
@@ -19,11 +28,11 @@ html {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding:10px 20px;
+    padding: 15px 20px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 
-} 
+}
 
 .nav-item a {
     text-decoration: none;
@@ -35,12 +44,12 @@ html {
 }
 
 .nav-item a:hover {
-    border-bottom: 2px solid deeppink;
-    color: #fff;  
+    border-bottom: 2px solid #F1EFEC;
+    color: #F1EFEC;
 }
 
 .nav-item a:active {
-    color: deeppink;
+    border-bottom: #F1EFEC;
 }
 
 /*menu icon */
@@ -52,9 +61,10 @@ html {
     height: 20px;
     cursor: pointer;
     margin: 15px 15px 10px auto;
-    z-index: 1000; /* Ensure the menu icon is above other elements */
+    z-index: 1000;
+    /* Ensure the menu icon is above other elements */
     position: relative;
-    top: 0; 
+    top: 0;
 }
 
 .menu-icon span {
@@ -64,61 +74,15 @@ html {
     transition: all 0.3s ease;
 }
 
-body {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.80857;
-    font-family: "Molle", cursive,'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 0;
-}
 
-body video {
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-} 
 
-/* scroll button section */ 
-#scrollToTop {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  font-size: 18px;
-  background-color: deeppink;
-  color: #fff;
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none; /* Hidden by default */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #555;
-}
-
-a {
-    text-decoration: none;
-    color: inherit; /* Inherit color from parent */
-}
-
- /* ----All Parts-------------------------------------------------------------- */
-/* Heading section */
 .heading {
     width: 100%;
     float: left;
     height: 100px;
     font-size: 50px;
     font-weight: bold;
-    color: deeppink;
+    color: #fff;
     text-align: center;
     margin: 25px 0;
     font-family: 'Caveat', cursive;
@@ -126,62 +90,30 @@ a {
 }
 
 .heading span {
-    color: white;
-    border-bottom: 2px solid deeppink;
+    color: #123458;
+    border-bottom: 2px solid #fff;
 }
 
 .portion {
     padding: 100px 0 80px 0;
 }
 
-img {
-    width: 400px;
-    height: 100%;
-    border-radius: 10px;
-}
 
-.glass-box {
-      background: rgba(255, 255, 255, 0.1); /* Transparent white */
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px); /* Blur */
-      -webkit-backdrop-filter: blur(10px); /* Safari */
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      text-align: center;
-      overflow: hidden;
-      border-radius: 20px;
-}
-
-.glass-box-black {
-    background: rgba(0, 0, 0, 0.5); /* Transparent white */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari */
-}
-
-/* ---------------------------------------------------------------------------------- */
- /* Hero section */
 
 .hero {
+    box-sizing: border-box;
     height: 100vh;
     text-align: center;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero-intro { 
-    text-align: center; 
-    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    color: #F1EFEC;
     position: relative;
-    z-index: 1; /* Ensure the intro is above the video */
-    overflow: hidden; /* Prevents overflow of content */
-    max-width: 1200px; /* Limit the width for larger screens */
+    overflow: hidden;
     font-weight: 300;
-}  
-
-
-.hero-intro h1, h2 {
     font-family: 'Caveat', cursive;
 }
 
@@ -191,201 +123,156 @@ img {
     margin: 0 auto;
 }
 
-.hero-intro h1 {
+.hero h1 {
     font-size: 80px;
     font-weight: 700;
-    color: deeppink;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 2px 2px #F1EFEC;
     line-height: 1.2;
 }
 
-.hero-intro h2 {
+.hero h2 {
     font-size: 30px;
     font-weight: 500;
     font-style: bold;
-    color: #fff;
     line-height: 1.5;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.hero-intro p {
-    font-family: 'Poppins', sans-serif;
+.hero p {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
-    font-weight: 300;
     line-height: 1.5;
-    color: #fff;
     margin: 20px 0;
     width: 900px;
 }
 
-.hero-img {
-    display: block;
-}
 
-/* ------------------------------------------------------------------ */
-/*  services section */
 
 #services {
     padding: 50px;
-    overflow: hidden; /* Prevents overflow of content */
-}
-
-.service-bg {
-    background-image: url("Images/Servicestrial-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.services-list {
-    width: 100%;
-    height: auto; /* Allow height to adjust based on content */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.service-item {
-    width: 250px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100vh;
+    background-color: #F1EFEC;
     overflow: hidden;
-    border-radius: 120px 50px 120px 50px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.05);
-    color: white;
-    cursor: pointer;
-    transition: 0.2s ease;
+    color: #123458;
 }
 
-.service-item span {
-    position: absolute;
-    padding: 40px;
-    font-weight: bold;  
-    text-align: center;
-    width: 100%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: opacity 0.1s ease;
-}
-
-.default-text {
-    opacity: 1;
-    font-size: 18px;
-}
-
-.hover-text {
-    opacity: 0;
-}
-
-/* Change text on hover */
-.service-item:hover .default-text {
-    opacity: 0;
-}
-
-.service-item:hover .hover-text {
-    opacity: 1;
-    font-size: 14px;
-}
-
-.service-item:hover{
-    color: #fff;
-    border-color: #fff;
-    box-shadow: 0 0 10px #fff;
-    transition: all 0.3s ease;
-    animation: tilt-shaking 0.20s ease-in-out;
-    animation-direction: alternate;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
-    border-radius: 20px;
-    transform: scale(1.05);
-    z-index: 1; /* Ensure the hovered item is above others */
-}
-
-@keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+#services .heading {
+    color: #123458;
 }
 
 
-/* --------------------------------------------------------------------- */
-/* Portfolio section */ 
+
+
 
 .portfolio {
-    background-image: url("");
-    background-size: cover;
-    background-repeat: no-repeat;       
-    background-position: center;
-    position: relative;
-    overflow: hidden; /* Prevents overflow of content */
+    background-color: #D4C9BE;
+    overflow: hidden;
 }
 
 .portfolio-cards {
     display: flex;
     gap: 30px;
     padding: 30px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .portfolio-card {
-    width: 250px;
-    height: 250px;
-    color: #fff; 
-    background: rgba(255, 255, 255, 0.05);
+    min-height: 200px;
+    width: 300px;
+    height: 300px;
+    padding: 30px 20px;
+    color: #123458;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
-    transition: 0.3s ease;
-    backdrop-filter: blur(12px);
-    position: relative;
-    overflow: hidden; /* Prevents overflow of content */
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    background: linear-gradient(145deg, rgba(241, 239, 236, 0.3), rgba(241, 239, 236, 0));
 }
 
 .portfolio-card h4 {
     font-size: 20px;
     font-weight: bold;
-    margin: 0;
+}
+
+.portfolio-card p {
+    font-size: 16px;
 }
 
 .portfolio-card:hover {
     transform: translateY(-10px);
-    border-color: #fff;
     box-shadow: 0 0 10px #fff;
     transition: all 0.3s ease;  
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
 }
 
-/* ---------------------------------------------------------------------- */ 
-
-/* Contact section */
-.contact-bg {
-    background-image: url("Images/contact-bg.png");
+.portfolio-card .default-text {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s;
 }
 
-.contact-info,
-.contact-form {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  min-width: 200px;
+.portfolio-card .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #123458;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-card:hover .hover-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.portfolio-card:hover .default-text {
+    opacity: 0;
+}
+
+/* Change text on hover */
+.portfolio-card:hover .default-text {
+    opacity: 0;
+}
+
+.portfolio-card:hover .hover-text {
+    opacity: 1;
+    font-size: 14px;
+}
+
+
+
+.contact-section {
+    background-color: #F1EFEC;
 }
 
 .contact-info {
+    background-color: #123458;
     width: 50%;
     padding: 20px;
     color: #fff;
     font-weight: 300;
     font-size: 18px;
-}   
+}
 
 .contact {
     box-sizing: border-box;
@@ -394,11 +281,13 @@ img {
     padding: 20px 40px;
     align-items: center;
     flex-direction: row;
-    gap: 2rem; /* Space between contact info and form */
+    gap: 2rem;
+    /* Space between contact info and form */
     padding: 50px 20px;
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Prevents overflow of content */
+    overflow: hidden;
+    /* Prevents overflow of content */
 }
 
 .contact-section p {
@@ -412,60 +301,64 @@ img {
     width: 100%;
     left: 0;
     right: 0;
-    z-index: 1; /* Ensure the text is above other elements */
+    z-index: 1;
+    /* Ensure the text is above other elements */
 }
 
 .contact-form {
     max-width: 100%;
+    padding-top: 40px;
+    ;
+}
+
+.mail-section {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 40px;;
 }
 
-.mail-section {
-    width: 60%;
-    margin: 0 auto; /* center the form */ 
-    text-align: center;
-}
-
-.mail-section  input,
+.mail-section input,
 .mail-section textarea {
     border-radius: 10px;
     border-style: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.1); /* Transparent white */
-    backdrop-filter: blur(10px); /* Blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari */
+    border: 1px solid rgba(212, 201, 190, 0.5);
+    box-shadow: 0 0 10px rgba(212, 201, 190, 0.5);
+    background: rgba(212, 201, 190, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 40px;
     outline: none;
     font-size: 16px;
     font-weight: 300;
-    color: #fff;
+    color: #030303;
     padding: 20px 30px;
-    width: 100%;    /* make inputs take full width of the container */
-    max-width: 600px;     /* set a max width for lorger screens */ 
+    width: 100%;
+    max-width: 600px;
     margin-bottom: 15px;
 }
 
-.mail-section  input:focus, textarea:focus {
-    border: 1px solid #fff;
+.mail-section input:focus,
+textarea:focus {
+    border: 1px solid rgba(212, 201, 190, 0.5);
     outline: none;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px rgba(212, 201, 190, 0.5);
     transform: scale(1.1);
     transition: all ease;
 }
 
 .mail-section input[type="submit"] {
-    background-color: #343a40;
+    background-color: #D4C9BE;
     color: #fff;
-    border: none;
-    width: 100%; /* make button take full width of the container */
-    max-width: 200px; 
-    margin: 10px auto;   /* center the button */  
+    border: #123458;
+    box-shadow: 0 0 10px #D4C9BE;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
     padding: 15px 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -474,87 +367,51 @@ img {
 }
 
 .mail-section input[type="submit"]:hover {
-    background-color: gold;
-    color: #000;
-    box-shadow: 0 0 10px gold;
+    background-color: #fff;
+    color: #123458;
+    border: 2px solid #123458;
     transition: all ease;
 }
 
 .mail-section textarea {
-    resize: none; /* Disable resizing of the textarea */
-    height: 120px; /* Set a fixed height for the textarea */
-    margin-bottom: 10px; /* Add some space below the textarea */
+    resize: none;
+    height: 120px;
+    margin-bottom: 10px;
 }
 
-
-/* ---------------------------------------------------------------- */
-
-/* Footer section */
-.footer {
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-}
-
-.footer-list {
+.contact-info {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 50px 0;
-}
-
-.footer-1, .footer-2, .footer-3 {
-    width: 350px;
-    height: 400px;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1); /* Transparent white */
-    backdrop-filter: blur(10px); /* Blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari */   
-}
-
-
-/* About us Page */ 
-.about, .service-page, .portfolio-page, .contact-page {
-    margin: 50px;
-    padding: 20px;
     box-sizing: border-box;
 }
 
-.about-content {
-    padding: 30px;
-    text-align: start;
-    font-size: 20px;
-    font-family: "Molle", cursive;
-  font-weight: 400;
-  font-style: italic;
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.about-content h3 {
-    font-size: 30px;
-    color: deeppink;
-    margin-bottom: 20px;
+ul a {
+    text-decoration: none;
+    color: white;
 }
 
 
-/* Portfolio Page */
-.portfolio-page {
-    color: #000;
-}
-.portfolio-page h3 {
-    font-size: 40px;
+.about {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.portfolio-page p {
-    font-size: 18px;
-    font-weight: 300;
-}
 /* responsive view */
 @media (max-width: 768px) {
     .menu-icon {
@@ -562,7 +419,8 @@ img {
     }
 
     .navbar {
-        display: none; /* Hide navbar by default */
+        display: none;
+        /* Hide navbar by default */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -574,7 +432,8 @@ img {
     }
 
     .navbar.active {
-        display: flex; /* Show navbar when active */
+        display: flex;
+        /* Show navbar when active */
     }
 
     .nav-item {
@@ -592,72 +451,28 @@ img {
     }
 
 
-    /* Hero section */
-    .hero-img {
-        display: none; /* Hide hero image on smaller screens */
-    }
+    
     .hero-intro {
-        padding: 20px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text on smaller screens */
+        padding: 20px;
+        text-align: center;
     }
+
     .hero-intro p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding-right: 0; /* Remove right padding */
-    }
-    /* Services and Portfolio sections */
-    .services {
-        height: auto; /* Allow height to adjust based on content */
-        padding: 50px 20px; /* Adjust padding for smaller screens */
-    }
-    .portfolio {
-        height: auto; /* Allow height to adjust based on content */
-        padding: 50px 20px; /* Adjust padding for smaller screens */
-    }
-    .services-list, .portfolio-cards {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-    .service-item, .portfolio-card {
-        margin-bottom: 20px; /* Add space between items */
-    }
-    .service-item img, .portfolio-card img {
-        background-repeat: no-repeat;
+        font-size: 18px;
+        padding-right: 0;
     }
 
-    .services-list {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .portfolio-list {
-        flex-direction: row;
-        align-items: center;
-    }
-
+    
     .mail-section {
-        width: 90%; /* Reduce width for smaller screens */
+        width: 90%;
+        /* Reduce width for smaller screens */
     }
 
-    .mail-section input, textarea {
-        padding: 15px; /* Adjust padding for smaller screens */
-        max-width: 100%; /* Remove max-width constraint */
-    }
-}
-
-/* Mobile styles */
-@media (max-width: 480px) {
-    .mail-section input, textarea {
-        padding: 10px; /* Further adjust padding for very small screens */
+    .mail-section input,
+    textarea {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+        max-width: 100%;
+        /* Remove max-width constraint */
     }
 }
-
-
-
-
-
-
-
-
-
-
