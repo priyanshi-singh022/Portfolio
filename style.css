@@ -163,22 +163,15 @@ img {
 
 .hero {
     height: 100vh;
+    text-align: center;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
-    padding: 0 50px;;
 }
 
 .hero-intro { 
-    text-align: start; 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    text-align: center; 
     color: #fff;
     position: relative;
     z-index: 1; /* Ensure the intro is above the video */
@@ -187,9 +180,18 @@ img {
     font-weight: 300;
 }  
 
-.hero-intro h1 {
+
+.hero-intro h1, h2 {
     font-family: 'Caveat', cursive;
-    font-style: normal;
+}
+
+.hero hr {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-intro h1 {
     font-size: 80px;
     font-weight: 700;
     color: deeppink;
@@ -199,13 +201,11 @@ img {
 }
 
 .hero-intro h2 {
-    font-family: 'Caveat', cursive;
     font-size: 30px;
     font-weight: 500;
     font-style: bold;
     color: #fff;
     line-height: 1.5;
-    margin: 0;
 }
 
 .hero-intro p {
@@ -215,6 +215,7 @@ img {
     line-height: 1.5;
     color: #fff;
     margin: 20px 0;
+    width: 900px;
 }
 
 .hero-img {
@@ -549,7 +550,8 @@ img {
 }
 
 .portfolio-page p {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 300;
 }
 /* responsive view */
 @media (max-width: 768px) {
