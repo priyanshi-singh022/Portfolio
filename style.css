@@ -8,10 +8,9 @@ html {
 }
 
 body {
-    color: #fff;
+    color: #F1EFEC;
     background-color: #123458;
     font-size: 14px;
-    font-family: "Molle", cursive, 'Poppins', sans-serif;
     font-weight: 400;
     margin: 0;
 }
@@ -62,7 +61,6 @@ body {
     cursor: pointer;
     margin: 15px 15px 10px auto;
     z-index: 1000;
-    /* Ensure the menu icon is above other elements */
     position: relative;
     top: 0;
 }
@@ -100,37 +98,35 @@ body {
 
 
 
-.hero {
+#hero {
     box-sizing: border-box;
     height: 100vh;
-    text-align: center;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    color: #F1EFEC;
     position: relative;
     overflow: hidden;
     font-weight: 300;
     font-family: 'Caveat', cursive;
 }
 
-.hero hr {
+#hero hr {
     width: 30%;
     text-align: center;
     margin: 0 auto;
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 80px;
     font-weight: 700;
     text-shadow: 1px 2px 2px #F1EFEC;
     line-height: 1.2;
 }
 
-.hero h2 {
+#hero h2 {
     font-size: 30px;
     font-weight: 500;
     font-style: bold;
@@ -140,7 +136,7 @@ body {
     font-style: normal;
 }
 
-.hero p {
+#hero p {
     font-family: "Courgette", cursive;
     font-weight: 400;
     font-style: normal;
@@ -152,23 +148,59 @@ body {
 
 
 
-#services {
+#Expertise {
     padding: 50px;
-    height: 100vh;
     background-color: #F1EFEC;
     overflow: hidden;
     color: #123458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#services .heading {
+.expertise-head {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Expertise .heading, .subheading {
     color: #123458;
+    width: 100%;
+    text-align: center;
+}
+
+.Soft-skills, .Technical-Skills {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+    width: 70%;
+    padding: 20px;
+}
+
+#Expertise ul {
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+#Expertise ul li {
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+}
+
+
+ul li {
+    list-style-type: none;
+    padding: 20px;
 }
 
 
 
-
-
-.portfolio {
+#portfolio {
     background-color: #D4C9BE;
     overflow: hidden;
 }
@@ -187,7 +219,7 @@ body {
     min-height: 200px;
     width: 300px;
     height: 300px;
-    padding: 30px 20px;
+    padding: 30px;
     color: #123458;
     display: flex;
     justify-content: center;
@@ -233,7 +265,6 @@ body {
     z-index: 2;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -261,8 +292,12 @@ body {
 
 
 
-.contact-section {
+#contact {
     background-color: #F1EFEC;
+}
+
+#contact .heading {
+    color: #123458;
 }
 
 .contact-info {
@@ -274,23 +309,7 @@ body {
     font-size: 18px;
 }
 
-.contact {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    padding: 20px 40px;
-    align-items: center;
-    flex-direction: row;
-    gap: 2rem;
-    /* Space between contact info and form */
-    padding: 50px 20px;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    /* Prevents overflow of content */
-}
-
-.contact-section p {
+#contact p {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -398,7 +417,7 @@ ul a {
 }
 
 
-.about {
+#Aboutme {
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -420,7 +439,6 @@ ul a {
 
     .navbar {
         display: none;
-        /* Hide navbar by default */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -433,7 +451,6 @@ ul a {
 
     .navbar.active {
         display: flex;
-        /* Show navbar when active */
     }
 
     .nav-item {
@@ -465,14 +482,14 @@ ul a {
     
     .mail-section {
         width: 90%;
-        /* Reduce width for smaller screens */
     }
 
     .mail-section input,
     textarea {
         padding: 15px;
-        /* Adjust padding for smaller screens */
         max-width: 100%;
-        /* Remove max-width constraint */
     }
 }
+
+
+

@@ -22,6 +22,7 @@
 
 <body>
     <!-- Header Section -->
+     
     <div class="header">
 
         <div class="menu-icon">
@@ -31,25 +32,25 @@
         </div>
         <div class="navbar glass-box-black">
             <div class="nav-item">
-                <a href="index.html">Home</a>
+                <a href="#hero">Home</a>
             </div>
             <div class="nav-item">
-                <a href="about.html">About Me</a>
+                <a href="#Expertise">Expertise</a>
             </div>
             <div class="nav-item">
-                <a href="services.html">Expertise</a>
+                <a href="#portfolio">Portfolio</a>
             </div>
             <div class="nav-item">
-                <a href="portfolio.html">Portfolio</a>
+                <a href="#Aboutme">About Me</a>
             </div>
             <div class="nav-item">
-                <a href="contact.html">Contact Me</a>
+                <a href="#contact">Contact Me</a>
             </div>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div id="hero">
         <h1>Priyanshi Singh</h1>
         <h2>A passionate Front-End Web Developer :)</h2>
         <hr />
@@ -60,44 +61,46 @@
 
 
     <!-- Services Section -->
-    <div id="services" role="services">
-        <div>
+    <div id="Expertise" role="services">
+        <div class="expertise-head">
             <h1 class="heading">My Expertise</h1>
         </div>
-        <div class="services-list">
-            <div class="service-item">
-                Responsive Website Development
-
-            </div>
-            <div class="service-item">Frontend Development</span>
-            </div>
-            <div class="service-item">
-                <span class="default-text">Project Planning & Wireframing</span>
-            </div>
-            <div class="service-item">
-                <span class="default-text">Testing & Bug Fixing</span>
-            </div>
-            <div class="service-item">
-                <span class="default-text">Delivery & Feedback Loop</span>
-            </div>
-            <div class="service-item">
-                <span class="default-text">Version Control (Git & GitHub)</span>
-
-            </div>
-            <div class="service-item">
-                <span class="default-text">Performance Optimization</span>
-
-            </div>
-            <div class="service-item">
-                <span class="default-text">Reusable Component Design</span>
-
-            </div>
+        <div class="Soft-skills">
+            <ul> <h3 class="subheading">Soft Skills</h3>
+                <li>Team Collaboration</li>
+                <li>Leadership</li>
+                <li>Time Management</li>
+                <li>Team Coordination</li>
+                <li>Self-Motivated</li>
+                <li>Adaptability</li>
+                <li>Growth mindset</li>
+                <li>Project managment</li>
+                <li>Client Support</li>
+                <li>Problem-Solving Mindset</li>
+            </ul>
+        </div>
+        <div class="Technical-Skills">
+            <ul> <h3 class="subheading">Technical Skills</h3>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>TailWind</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Postal</li>
+                <li>Git/github</li>
+                <li>Monster API</li>
+                <li>Rapid API</li>
+                <li>AI Model</li>
+                <li>SpeechRecognition Python</li>
+            </ul>
         </div>
     </div>
 
 
     <!-- Portfolio Section-->
-    <div class="portfolio portion" role="portfolio">
+    <div class="portion" role="portfolio" id="portfolio">
         <div>
             <h1 class="heading">My <span class="heading-title">Portfolio</span></h1>
         </div>
@@ -136,28 +139,32 @@
 
             </div>
             <div class="portfolio-card">
-                <h4>Portfolio Website</h4>
-                <p>A personal portfolio website showcasing my skills, projects, and professional journey.</p>
+                <span class="default-text">
+                    <h4>ECommerce Products Landing Page</h4>
+                    <p>My Role: Website Planning, Client Support, Team lead, Content Planning & Manage</p>
+                </span>
+                <span class="hover-text">
+
+                </span>
             </div>
             <div class="portfolio-card">
-                <h4>Landing Page</h4>
+                <span class="default-text">
+                    <h4>Landing Page</h4>
                 <p>A clean and responsive landing page built using HTML and CSS as part of The Odin Project.</p>
+                </span>
+                
             </div>
             <div class="portfolio-card">
-                <h4></h4>
-                <p></p>
+                
             </div>
             <div class="portfolio-card">
-                <h4></h4>
-                <p></p>
+                
             </div>
             <div class="portfolio-card">
-                <h4></h4>
-                <p></p>
+                
             </div>
             <div class="portfolio-card">
-                <h4></h4>
-                <p></p>
+                
             </div>
         </div>
     </div>
@@ -165,7 +172,7 @@
 
 
     <!-- about me -->
-    <div class="about portion" role="about">
+    <div class="portion" role="about" id="Aboutme">
         <h2>Hey! I'm Priyanshi</h2>
         <p>
             I’m a passionate front-end developer who enjoys the process of turning ideas into real, interactive
@@ -215,27 +222,21 @@
 
 
 
-    <!-- Contact Section-->
-    <div class="contact-section portion contact-bg">
-        <h1 class="heading">My <span class="heading-title">Contact</span></h1>
-
-        <div class="contact">
-            <div class="contact-form">
-                <form class="mail-section" action="https://formsubmit.co/priyanshisingh0222@gmail.com" method="post">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <input type="text" id="number" name="number" placeholder="Your Phone Number" required>
-                    <textarea id="message" name="message" rows="4" cols="79" placeholder="Your Message"
-                        required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+    <div class="portion" id="contact">
+        <h1 class="heading">Contact Me</h1>
+        <div class="contact-form">
+            <form class="mail-section" action="https://formsubmit.co/priyanshisingh0222@gmail.com" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="number" name="number" placeholder="Your Phone Number" required>
+                <textarea id="message" name="message" rows="4" cols="79" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
 
 
     <div class="contact-info">
-        <p>Feel free to reach out for collaborations, to hire me, or just to say hello!</p>
         <ul>
             <li> <a href="mailto:priyanshisingh022@gmail.com">priynashisingh0222@gmail.com <a>
             <li> <a href="tel:+919467309879">+91 9467309879</a></li>
@@ -255,6 +256,8 @@
         </ul>
     </div>
 
+
+    
 
 
     <!-- javascript file-->
