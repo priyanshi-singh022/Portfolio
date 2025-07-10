@@ -16,10 +16,13 @@ body {
 }
 
 .header {
-    border-radius: 20%;
+    border-radius: 20px;
     display: flex;
     justify-self: center;
-    margin-top: 15px;
+    margin-top: 30px;
+    background-color: #123458;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navbar {
@@ -27,10 +30,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
     padding: 15px 20px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .nav-item a {
@@ -170,6 +173,10 @@ body {
     color: #123458;
     width: 100%;
     text-align: center;
+}
+
+#Expertise .subheading {
+    font-size: large;
 }
 
 .Soft-skills, .Technical-Skills {
@@ -400,6 +407,84 @@ textarea:focus {
     margin-bottom: 10px;
 }
 
+
+.Btn {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  border-radius: 45px;
+  border: none;
+  background-color: #D4C9BE;
+  color: white;
+  box-shadow: 0px 10px 10px #D4C9BE inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px #D4C9BE inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn::before {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.678);
+  content: "";
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
+}
+
+.Btn::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
 .contact-info {
     width: 100%;
     box-sizing: border-box;
@@ -437,15 +522,15 @@ ul a {
 @media (max-width: 768px) {
     .menu-icon {
         display: flex;
+        float: inline-end;
     }
 
     .navbar {
         display: none;
-        flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 0;
-        width: 50%;
+        width: 150px;
+        background-color: #123458;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         padding-bottom: 20px;
@@ -460,10 +545,7 @@ ul a {
         padding: 10px 0;
     }
 
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
+    
 
     .nav-item a {
         font-size: 16px;
@@ -492,6 +574,7 @@ ul a {
         max-width: 100%;
     }
 }
+
 
 
 
