@@ -103,7 +103,7 @@ body {
 
 #hero {
     box-sizing: border-box;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -146,7 +146,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     margin: 20px 0;
-    width: 900px;
+    max-width: 80%;
 }
 
 
@@ -169,7 +169,8 @@ body {
     box-sizing: border-box;
 }
 
-#Expertise .heading, .subheading {
+#Expertise .heading,
+.subheading {
     color: #123458;
     width: 100%;
     text-align: center;
@@ -179,7 +180,8 @@ body {
     font-size: large;
 }
 
-.Soft-skills, .Technical-Skills {
+.Soft-skills,
+.Technical-Skills {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
@@ -254,7 +256,7 @@ ul li {
 .portfolio-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 10px #fff;
-    transition: all 0.3s ease;  
+    transition: all 0.3s ease;
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
 }
 
@@ -409,76 +411,76 @@ textarea:focus {
 
 
 .Btn {
-  position: relative;
-  width: 150px;
-  height: 55px;
-  border-radius: 45px;
-  border: none;
-  background-color: #D4C9BE;
-  color: white;
-  box-shadow: 0px 10px 10px #D4C9BE inset,
-  0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px #D4C9BE inset;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: #D4C9BE;
+    color: white;
+    box-shadow: 0px 10px 10px #D4C9BE inset,
+        0px 5px 10px rgba(5, 5, 5, 0.212),
+        0px -10px 10px #D4C9BE inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Btn::before {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgba(250, 250, 250, 0.678);
-  content: "";
-  filter: blur(1px);
-  top: 7px;
-  border-radius: 50%;
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
 }
 
 .Btn::after {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgba(250, 250, 250, 0.137);
-  content: "";
-  filter: blur(1px);
-  bottom: 7px;
-  border-radius: 50%;
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
 }
 
 .Btn:hover {
-  animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
 }
 
 @keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
 
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
 
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
 
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
 
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
 
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
 
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 
@@ -545,14 +547,14 @@ ul a {
         padding: 10px 0;
     }
 
-    
+
 
     .nav-item a {
         font-size: 16px;
     }
 
 
-    
+
     .hero-intro {
         padding: 20px;
         text-align: center;
@@ -563,7 +565,7 @@ ul a {
         padding-right: 0;
     }
 
-    
+
     .mail-section {
         width: 90%;
     }
@@ -577,4 +579,118 @@ ul a {
 
 
 
+@media (max-width: 480px) {
 
+    .portion {
+        padding: 50px 0;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        padding: 5px;
+        z-index: 1000;
+        margin-left: 5px;
+    }
+
+    .header .menu-icon {
+        margin: 5px;
+        width: 15px;
+    height: 15px;
+    }
+    body {
+        font-size: 12px;
+    }
+
+    #hero {
+        height: 80vh;
+        padding: 20px;
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+
+    #hero h2 {
+        font-size: 20px;
+    }
+
+    #hero p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    #hero hr {
+        width: 50%;
+    }
+
+    #Expertise {
+        padding: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #Expertise ul {
+        gap: 8px;
+        width: 100%;
+    }
+
+    #Expertise ul li {
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: none;
+    }
+
+
+    ul li {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    .Soft-skills,
+    .Technical-Skills {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+
+    .portfolio-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hover-text p {
+        font-size: 14px;
+    }
+
+    #Aboutme {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        width: 90%;
+    }
+
+    #contact p {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+}
