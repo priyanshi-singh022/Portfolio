@@ -16,13 +16,11 @@ body {
 }
 
 .header {
-    border-radius: 20px;
-    display: flex;
-    justify-self: center;
-    margin-top: 30px;
-    background-color: #123458;
     position: fixed;
     z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar {
@@ -31,8 +29,8 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: #123458;
     padding: 15px 20px;
-    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -57,22 +55,9 @@ body {
 /*menu icon */
 .menu-icon {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
     cursor: pointer;
-    margin: 15px 15px 10px auto;
-    z-index: 1000;
-    position: relative;
-    top: 0;
-}
-
-.menu-icon span {
-    display: block;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease;
+    margin-left: auto;
+    padding: 5px;
 }
 
 
@@ -525,6 +510,21 @@ ul a {
     .menu-icon {
         display: flex;
         float: inline-end;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #123458;
     }
 
     .navbar {
@@ -595,8 +595,9 @@ ul a {
     .header .menu-icon {
         margin: 5px;
         width: 15px;
-    height: 15px;
+        height: 15px;
     }
+
     body {
         font-size: 12px;
     }
