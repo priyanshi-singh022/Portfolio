@@ -602,6 +602,10 @@ ul a {
         font-size: 12px;
     }
 
+    .heading {
+        margin: 0;
+        padding: 10px;
+    }
     #hero {
         height: 80vh;
         padding: 20px;
