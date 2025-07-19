@@ -12,24 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// scroll to top functionality 
-// Show the button after scrolling down 100px
-window.onscroll = function () {
-  const btn = document.getElementById("scrollToTopBtn");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    btn.style.display = "block";
+document.getElementById('seeMoreBtn').addEventListener('click', () => {
+  var more = document.getElementById('moreAboutMe');
+  if(more.style.display === 'none') {
+    more.style.display = 'block';
+    document.getElementById('seeMoreBtn').textContent = 'See Less';
   } else {
-    btn.style.display = "none";
+    more.style.display = 'none';
+    document.getElementById('seeMoreBtn').textContent = 'See More';
   }
-};
-
-// Scroll to top when clicked
-document.getElementById("scrollToTopBtn").addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
 });
-
 
 
