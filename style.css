@@ -632,7 +632,7 @@ ul a {
         padding: 20px;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 1px;
     }
 
     #Expertise ul {
@@ -655,7 +655,7 @@ ul a {
     .Soft-skills,
     .Technical-Skills {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
         box-shadow: none;
     }
 
