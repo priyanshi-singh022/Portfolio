@@ -210,6 +210,10 @@ ul li {
     flex-wrap: wrap;
 }
 
+button {
+    text-decoration: none;
+}
+
 .portfolio-card {
     min-height: 200px;
     width: 300px;
@@ -261,10 +265,16 @@ ul li {
     z-index: 2;
     opacity: 0;
     pointer-events: none;
-    padding: 20px;
+    padding: 20px;                    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.hover-text a {
+    text-decoration: none;
+    color: #123458 important;
 }
 
 .portfolio-card:hover .hover-text {
@@ -505,43 +515,53 @@ ul a {
     font-style: normal;
 }
 
-#seeMoreBtn {
+#seeMoreBtn, .hover-text a {
     font-size: 14px;
-  color: #e1e1e1;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
-#seeMoreBtn:focus,
-#seeMoreBtn:hover {
-  color: #fff;
+#seeMoreBtn {
+    color: #fff;
 }
 
-#seeMoreBtn:focus:after,
-#seeMoreBtn:hover:after {
-  width: 100%;
-  left: 0%;
+#seeMoreBtn:focus, .hover-text a:focus {
+    outline: none;
+    color: #fff;
+}
+#seeMoreBtn:hover, .hover-text a:hover {
+    color: #fff;
 }
 
-#seeMoreBtn:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
+#seeMoreBtn:focus:after, .hover-text a:focus:after {
+    width: 100%;
+    left: 0%;
+}
+
+#seeMoreBtn:hover:after, .hover-text a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+#seeMoreBtn:after, .hover-text a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 /* responsive view */
@@ -645,6 +665,7 @@ ul a {
         margin: 0;
         padding: 10px;
     }
+
     #hero {
         height: 80vh;
         padding: 20px;
