@@ -9,13 +9,15 @@ html {
 
 body {
     color: #F1EFEC;
-    background-color: #123458;
+    background-color: #FEF7F1;
     font-size: 14px;
     font-weight: 400;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.25;
 }
 
-.header {
+.menu {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -29,14 +31,14 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #123458;
+    background-color: #FEF8EE;
     padding: 15px 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #fff;
+    color: #123458;
     font-size: 16px;
     font-weight: bold;
     padding: 5px 10px;
@@ -44,8 +46,8 @@ body {
 }
 
 .nav-item a:hover {
-    border-bottom: 2px solid #F1EFEC;
-    color: #F1EFEC;
+    border-bottom: 2px solid #123458;
+    color: #123458;
 }
 
 .nav-item a:active {
@@ -60,45 +62,27 @@ body {
     padding: 5px;
 }
 
-
-
-.heading {
-    width: 100%;
-    float: left;
-    height: 100px;
-    font-size: 50px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0;
-    font-family: 'Caveat', cursive;
-    font-style: normal;
-}
-
-.heading span {
-    color: #123458;
-    border-bottom: 2px solid #fff;
-}
-
 .portion {
     padding: 100px 0 80px 0;
 }
 
 
-
 #hero {
-    box-sizing: border-box;
-    height: 120vh;
+    border-radius: 10%;
+    margin-top: 60px;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     font-weight: 300;
-    font-family: 'Caveat', cursive;
+    background-color: #123458;
+    font-family: "Courgette", cursive;
 }
 
 #hero hr {
@@ -110,94 +94,110 @@ body {
 #hero h1 {
     font-size: 80px;
     font-weight: 700;
-    text-shadow: 1px 2px 2px #F1EFEC;
-    line-height: 1.2;
+    line-height: 0.25;
 }
 
 #hero h2 {
     font-size: 30px;
     font-weight: 500;
-    font-style: bold;
-    line-height: 1.5;
-    font-family: "Courgette", cursive;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #hero p {
-    font-family: "Courgette", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    line-height: 1.5;
     margin: 20px 0;
     max-width: 80%;
 }
 
-
-
-#Expertise {
-    padding: 50px;
-    background-color: #F1EFEC;
-    overflow: hidden;
-    color: #123458;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+#hero button {
+    background-color: #FF4500;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.expertise-head {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#Expertise .heading,
-.subheading {
+.expertise-section {
+    background-color: #fff6ef;
     color: #123458;
-    width: 100%;
+    padding: 70px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#Expertise .subheading {
-    font-size: large;
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.Soft-skills,
-.Technical-Skills {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
-    width: 70%;
-    padding: 20px;
+.expertise-section .description {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#Expertise ul {
-    gap: 10px;
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-card {
+    background-color: white;
+    color: #123458;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     width: 100%;
-    padding: 20px;
+    max-width: 500px;
+    transition: transform 0.3s;
 }
 
-#Expertise ul li {
-    border-radius: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #123458;
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+.skill-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
+
+.skill-card ul {
+    list-style: none;
+    text-align: left;
+    flex-direction: row;
+}
+
+.skill-card ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.skill-card ul li::before {
+    content: "|";
+    margin-right: 10px;
+    color: green;
+}
+
 
 
 ul li {
     list-style-type: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 
 
 #portfolio {
-    background-color: #D4C9BE;
+    background-color: #123458;
     overflow: hidden;
+    text-align: center;
 }
 
 .portfolio-cards {
@@ -216,7 +216,7 @@ button {
 
 .portfolio-card {
     min-height: 200px;
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     padding: 30px;
     color: #123458;
@@ -225,12 +225,13 @@ button {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
-    transition: 0.3s ease-in-out;
     overflow: hidden;
-    background: linear-gradient(145deg, rgba(241, 239, 236, 0.3), rgba(241, 239, 236, 0));
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-card h4 {
@@ -246,7 +247,7 @@ button {
     transform: translateY(-10px);
     box-shadow: 0 0 10px #fff;
     transition: all 0.3s ease;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02)), #fff6ef;
 }
 
 .portfolio-card .default-text {
@@ -265,7 +266,7 @@ button {
     z-index: 2;
     opacity: 0;
     pointer-events: none;
-    padding: 20px;                    
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,8 +299,152 @@ button {
 
 
 
+.connect-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.connect-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.connect-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #ddd;
+    object-fit: cover;
+}
+
+.connect-content {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.connect-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.connect-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-one {
+    background-color: #FF4500;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fff6ef;
+}
+
+.btn-one,
+.btn-two {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn-two {
+    padding: 10px 20px;
+    border: 1px solid #FF4500;
+    color: #FF4500;
+    border-radius: 999px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#certificates {
+    color: #123458;
+    text-align: center;
+}
+
+#certificates h2 {
+    margin-bottom: 30px;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: #123458;
+    padding: 60px 20px;
+}
+
+.card {
+    background: transparent;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Or use "contain" if you don’t want cropping */
+  display: block;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 0 10px 20px;
+}
+
+.card button {
+    padding: 10px 24px;
+    border: 1.5px solid #000;
+    border-radius: 24px;
+    background-color: transparent;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #FF4500;
+    color: #fff;
+}
+
+
+
+
 #contact {
-    background-color: #F1EFEC;
+    color: #123458;
+    text-align: center;
 }
 
 #contact .heading {
@@ -411,11 +556,13 @@ textarea:focus {
     height: 55px;
     border-radius: 45px;
     border: none;
-    background-color: #D4C9BE;
-    color: #123458;
-    box-shadow: 0px 10px 10px #D4C9BE inset,
+    background-color: #FF4500;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 10px 10px #FF4500 inset,
         0px 5px 10px rgba(5, 5, 5, 0.212),
-        0px -10px 10px #D4C9BE inset;
+        0px -10px 10px #FF4500 inset;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -513,9 +660,11 @@ ul a {
     font-family: "Courgette", cursive;
     font-weight: 400;
     font-style: normal;
+    background-color: #123458;
 }
 
-#seeMoreBtn, .hover-text a {
+#seeMoreBtn,
+.hover-text a {
     font-size: 14px;
     font-weight: 800;
     cursor: pointer;
@@ -532,25 +681,31 @@ ul a {
     color: #fff;
 }
 
-#seeMoreBtn:focus, .hover-text a:focus {
+#seeMoreBtn:focus,
+.hover-text a:focus {
     outline: none;
     color: #fff;
 }
-#seeMoreBtn:hover, .hover-text a:hover {
+
+#seeMoreBtn:hover,
+.hover-text a:hover {
     color: #fff;
 }
 
-#seeMoreBtn:focus:after, .hover-text a:focus:after {
+#seeMoreBtn:focus:after,
+.hover-text a:focus:after {
     width: 100%;
     left: 0%;
 }
 
-#seeMoreBtn:hover:after, .hover-text a:hover:after {
+#seeMoreBtn:hover:after,
+.hover-text a:hover:after {
     width: 100%;
     left: 0%;
 }
 
-#seeMoreBtn:after, .hover-text a:after {
+#seeMoreBtn:after,
+.hover-text a:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
@@ -558,7 +713,7 @@ ul a {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: #FF4500;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
