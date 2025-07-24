@@ -24,3 +24,12 @@ document.getElementById('seeMoreBtn').addEventListener('click', () => {
 });
 
 
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      const link = card.getAttribute('data-link');
+      if (link) {
+        window.open(link, '_blank'); // Opens in new tab
+      }
+    });
+  });
+
