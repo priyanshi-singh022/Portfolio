@@ -73,7 +73,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -83,6 +83,7 @@ body {
     font-weight: 300;
     background-color: #123458;
     font-family: "Courgette", cursive;
+    padding: 90px 20px;
 }
 
 #hero hr {
@@ -95,11 +96,13 @@ body {
     font-size: 80px;
     font-weight: 700;
     line-height: 0.25;
+    padding: 20px 0;
 }
 
 #hero h2 {
     font-size: 30px;
     font-weight: 500;
+    padding: 20px 0;
 }
 
 #hero p {
@@ -135,12 +138,6 @@ h2 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-.expertise-section .description {
-    font-size: 14px;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .skill-cards {
@@ -901,6 +898,11 @@ ul a {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1px;
+    }
+
+    #Expertise .skill-cards {
+        padding: 20px;
+        margin: 0;
     }
 
     #Expertise ul {
