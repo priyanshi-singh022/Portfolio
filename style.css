@@ -47,9 +47,10 @@ body {
 }
 
 .nav-item a:hover {
-        color: #FF4500;
-        border-bottom: 2px solid #FF4500;
-    }
+    color: #FF4500;
+    border-bottom: 2px solid #FF4500;
+}
+
 .nav-item a:active {
     border-bottom: #F1EFEC;
 }
@@ -82,8 +83,11 @@ body {
     overflow: hidden;
     font-weight: 300;
     background-color: #123458;
-    font-family: "Courgette", cursive;
+    color: #fff;
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    font-weight: normal;
     padding: 90px 20px;
+    background-image: url(Images/hero-img.png);
 }
 
 #hero hr {
@@ -102,7 +106,7 @@ body {
 #hero h2 {
     font-size: 30px;
     font-weight: 500;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
 }
 
 #hero p {
@@ -239,6 +243,7 @@ button {
 
 .portfolio-card p {
     font-size: 16px;
+    padding: 10px 0;
 }
 
 .portfolio-card:hover {
@@ -297,69 +302,69 @@ button {
 
 
 .experience {
-  background-color: #fef3eb;
-  padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+    background-color: #fef3eb;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .section-title {
-  font-size: 28px;
-  color: #003344;
-  font-weight: bold;
-  border-left: 4px solid #003344;
-  padding-left: 12px;
-  margin-bottom: 40px;
+    font-size: 28px;
+    color: #003344;
+    font-weight: bold;
+    border-left: 4px solid #003344;
+    padding-left: 12px;
+    margin-bottom: 40px;
 }
 
 .timeline {
-  position: relative;
-  margin-left: 20px;
-  border-left: 2px solid #003344;
+    position: relative;
+    margin-left: 20px;
+    border-left: 2px solid #003344;
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 30px;
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
 }
 
 .timeline-item .dot {
-  position: absolute;
-  left: -10px;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  background-color: #003344;
-  border: 3px solid #fef3eb;
-  border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background-color: #003344;
+    border: 3px solid #fef3eb;
+    border-radius: 50%;
 }
 
 .timeline-item .content h3 {
-  font-size: 18px;
-  color: #002244;
-  margin-bottom: 8px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    font-size: 18px;
+    color: #002244;
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .timeline-item .content h3 span {
-  font-size: 14px;
-  color: #666;
-  font-weight: normal;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
 }
 
 .timeline-item .content p {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #333;
-  line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.5;
 }
 
 .timeline-item .content p span {
-  font-weight: 600;
-  color: #004c4c;
+    font-weight: 600;
+    color: #004c4c;
 }
 
 
@@ -406,49 +411,53 @@ button {
 }
 
 .social-buttons {
-  display: flex;
-  gap: 14px;
+    display: flex;
+    gap: 14px;
 }
 
-.btn, #hero-btn {
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 20px;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
+.btn,
+#hero-btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 /* LinkedIn */
 .btn.linkedin {
-  background-color: #ff4500;
-  color: #fff;
-  border: 2px solid #ff4500;
+    background-color: #ff4500;
+    color: #fff;
+    border: 2px solid #ff4500;
 }
+
 .btn.linkedin:hover {
-  background-color: #e63e00;
+    background-color: #e63e00;
 }
 
 /* GitHub */
 .btn.github {
-  background-color: transparent;
-  color: #ff4500;
-  border: 2px solid #ff4500;
+    background-color: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
 }
+
 .btn.github:hover {
-  background-color: #ff4500;
-  color: #fff;
+    background-color: #ff4500;
+    color: #fff;
 }
 
 /* Twitter (X) */
 .btn.twitter {
-  background-color: transparent;
-  color: #ff4500;
-  border: 2px solid #ff4500;
+    background-color: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
 }
+
 .btn.twitter:hover {
-  background-color: #ff4500;
-  color: #fff;
+    background-color: #ff4500;
+    color: #fff;
 }
 
 #certificates {
@@ -482,16 +491,17 @@ button {
 }
 
 .card-image {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 6px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Or use "contain" if you don’t want cropping */
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Or use "contain" if you don’t want cropping */
+    display: block;
 }
 
 .card h3 {
@@ -509,9 +519,9 @@ button {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 
@@ -681,8 +691,8 @@ ul a {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 20px;
-    font-family: "Courgette", cursive;
-    font-weight: 400;
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    font-weight: normal;
     font-style: normal;
     background-color: #123458;
 }
@@ -711,9 +721,12 @@ ul a {
     color: #fff;
 }
 
-#seeMoreBtn:hover,
-.hover-text a:hover {
+#seeMoreBtn:hover {
     color: #fff;
+}
+
+.hover-text a {
+    color: #ff4500;
 }
 
 #seeMoreBtn:focus:after,
@@ -811,7 +824,7 @@ ul a {
     #hero h1 {
         margin: 20px 0;
     }
-    
+
     .mail-section {
         width: 90%;
     }
@@ -838,10 +851,10 @@ ul a {
         color: fff;
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
     }
 
-   
+
 
     body {
         font-size: 14px;
@@ -849,7 +862,6 @@ ul a {
 
     #hero {
         height: 80vh;
-        padding: 20px;
         border-radius: 0;
         background-image: url(Images/hero-img.png);
         background-size: cover;
@@ -860,8 +872,8 @@ ul a {
         flex-direction: column;
         justify-content: end;
         align-items: center;
-        font-family: "Courgette", cursive;
-        font-weight: 400;
+        font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+        font-weight: normal;
         font-style: normal;
         padding: 40px 20px;
         overflow: hidden;
@@ -949,8 +961,8 @@ ul a {
     }
 
     .portfolio-card:hover {
-     font-size: 14px;
-     transform-style: flat;
+        font-size: 14px;
+        transform-style: flat;
     }
 
     .hover-text p {
@@ -971,6 +983,7 @@ ul a {
         float: center;
         padding-bottom: 15px;
     }
+
     .card img {
         height: auto;
         border-radius: 6px
