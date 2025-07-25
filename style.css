@@ -80,9 +80,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    overflow: hidden;
-    font-weight: 300;
-    background-color: #123458;
     color: #fff;
     font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
     font-weight: normal;
@@ -111,26 +108,13 @@ body {
 
 #hero p {
     font-weight: 400;
-    font-style: normal;
     font-size: 20px;
     margin: 20px 0;
     max-width: 80%;
 }
 
-#hero button {
-    background-color: #FF4500;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .expertise-section {
-    background-color: #fff6ef;
     color: #123458;
-    padding: 70px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -154,13 +138,11 @@ h2 {
 
 .skill-card {
     background-color: white;
-    color: #123458;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     width: 100%;
     max-width: 500px;
-    transition: transform 0.3s;
 }
 
 .skill-card h3 {
@@ -217,8 +199,8 @@ button {
 }
 
 .portfolio-card {
-    min-height: 200px;
-    max-width: 300px;
+    min-height: 80px;
+    max-width: 250px;
     height: 300px;
     padding: 30px;
     color: #123458;
@@ -233,7 +215,7 @@ button {
     padding: 30px;
     width: 100%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .portfolio-card h4 {
