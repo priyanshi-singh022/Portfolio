@@ -845,6 +845,7 @@ ul a {
     #hero {
         height: 80vh;
         border-radius: 0;
+        background-color: #123458;
         background-image: url(Images/hero-img.png);
         background-size: cover;
         background-position: center;
