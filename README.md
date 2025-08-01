@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio! This site showcases my skills, projects, and passion for building responsive, user-friendly websites and web applications. Each project reflects my learning journey and commitment to quality code.
+Welcome to my personal portfolio! This site showcases my skills, projects, and passion for building responsive, user-friendly websites and web applications. Each project reflects my learning journey and commitment to quality code. [Live](https://pikupika.github.io/Priyanshi-Singh/)
 
 ## 📁 Features
 
