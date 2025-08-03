@@ -74,7 +74,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
