@@ -84,7 +84,7 @@ body {
     font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
     font-weight: normal;
     padding: 90px 20px;
-    background-image: url(Images/hero-img.png);
+    background-color: #123458;
 }
 
 #hero hr {
