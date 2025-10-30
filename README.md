@@ -12,7 +12,7 @@ Welcome to my personal portfolio! This site showcases my skills, projects, and p
   Learn more about my journey, skills, and what drives me as a developer.
 - **Contact form**  
   Get in touch with me directly through a simple, accessible contact form.
-- **Scroll animations & interactive elements**  
+- **Interactive elements**  
   Enhanced with smooth animations and engaging UI components, including a stylish button from [uiverse.io](https://uiverse.io/).
 
 ## 🛠️ Tech Stack
@@ -22,25 +22,10 @@ Welcome to my personal portfolio! This site showcases my skills, projects, and p
 - **JavaScript**  
 - **Git & GitHub**
 
-## 🚀 Getting Started
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/your-portfolio.git
-    cd your-portfolio
-    ```
-2. **Open `index.html` in your browser**  
-   (or deploy to your favorite static hosting service)
-
 ## 📸 Screenshots
 
 <!-- Add a screenshot of your portfolio below -->
 ![Portfolio Screenshot](Images/portfolio.png)
-
-## 🤝 Contributing
-
-Contributions, suggestions, and feedback are always welcome!  
-Feel free to open an issue or submit a pull request.
 
 ## 📬 Contact
 
