@@ -314,7 +314,16 @@
     align-items:center;
     justify-content:center;
     margin-bottom:20px;
+    overflow: hidden;
   }
+
+.avatar-mark img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the square without stretching/distorting */
+  border-radius: 3px; /* matches .avatar-mark's existing radius */
+  display: block;
+}
   .avatar-mark span{
     font-family:var(--display);
     font-size:54px;
@@ -638,7 +647,7 @@
 
       <div class="about-grid">
         <div class="about-panel">
-          <div class="avatar-mark"><span>PS</span></div>
+          <div class="avatar-mark"><img src="./Images/my_dp.jpg" alt="mydp"></div>
           <div class="meta-row"><span>Based</span><span>Remote / IN</span></div>
           <div class="meta-row"><span>Focus</span><span>Web products</span></div>
           <div class="meta-row"><span>Projects led</span><span>20+</span></div>
@@ -748,37 +757,42 @@
       </div>
       <div class="exp-list">
         <div class="exp-row">
+          <div class="exp-date">Jul 2024 – Apr 2025</div>
+          <div>
+            <div class="exp-role">Project Manager & Web Developer</div>
+            <div class="exp-org">NKSS Digital</div>
+            <ul class="exp-points">
+              <li>Managed 18+ client projects from planning to delivery</li>
+              <li>Handled requirements, timelines, testing, feedback & revisions</li>
+              <li>Coordinated with clients and development/design teams</li>
+              <li>Maintained project tracking using Google Sheets & Excel</li>
+              <li>Worked on Supply Chain Management System — planning, wireframing, testing &amp; coordination</li>
+              <li>Developed websites using WordPress, HTML & CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-row">
           <div class="exp-date">Jul 2025 – Aug 2025</div>
           <div>
             <div class="exp-role">Frontend, Backend &amp; Python Developer</div>
             <div class="exp-org">CodeXIntern · Remote</div>
             <ul class="exp-points">
-              <li>Built responsive UI with React + Tailwind CSS</li>
-              <li>Built &amp; tested REST APIs with Node.js, Express, MongoDB</li>
-              <li>Implemented JWT auth, validation &amp; secure workflows</li>
+              <li>Built responsive UIs using React &amp; Tailwind CSS</li>
+              <li>Developed REST APIs using Node.js, Express &amp; MongoDB</li>
+              <li>Implemented JWT authentication &amp; validation</li>
+              <li>Tested and integrated frontend with backend APIs</li>
             </ul>
           </div>
         </div>
         <div class="exp-row">
-          <div class="exp-date">Jan 2025 – Apr 2025</div>
+          <div class="exp-date">Jan 2026 – Jul 2026</div>
           <div>
-            <div class="exp-role">Freelance Web Project Coordinator &amp; Developer</div>
-            <div class="exp-org">NKSS Digital</div>
+            <div class="exp-role">HR Recruiter</div>
+            <div class="exp-org">Orange Corporate Solutions</div>
             <ul class="exp-points">
-              <li>Designed &amp; delivered custom WordPress sites</li>
-              <li>Managed milestones, UI approvals &amp; deployment</li>
-            </ul>
-          </div>
-        </div>
-        <div class="exp-row">
-          <div class="exp-date">Jul 2024 – Dec 2024</div>
-          <div>
-            <div class="exp-role">Project Manager &amp; WordPress Developer</div>
-            <div class="exp-org">NKSS Digital</div>
-            <ul class="exp-points">
-              <li>Led 20+ client projects from concept to delivery</li>
-              <li>Improved on-time delivery rate to 95%</li>
-              <li>Built wireframes &amp; automated workflow sheets</li>
+              <li>Sourced and screened candidates based on requirements</li>
+              <li>Coordinated interviews, follow-ups &amp; client communication</li>
+              <li>Managed multiple requirements and recruitment targets simultaneously</li>
             </ul>
           </div>
         </div>
@@ -798,27 +812,28 @@
           <p style="color:var(--ink-soft); font-size:16.5px; max-width:44ch; margin-bottom:28px;">Have a product idea, a stalled project, or a team that needs structure? Tell me what you're working on — I'll reply within a day.</p>
 
           <div class="titleblock">
-            <div class="tb-row"><span>Email</span><a href="mailto:priyanshisingh0222">Priyanshisingh0222</a></div>
+            <div class="tb-row"><span>Email</span><a href="mailto:priyanshisingh0222@gmail.com">Priyanshisingh0222</a></div>
             <div class="tb-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/priyanshi-singh022/" target="_blank" rel="noopener">in/priyanshi-singh022/</a></div>
             <div class="tb-row"><span>GitHub</span><a href="https://github.com/priyanshi-singh022" target="_blank" rel="noopener">/priyanshi-singh022</a></div>
             <div class="tb-row"><span>Availability</span><span style="color:var(--green);">Open to work</span></div>
           </div>
         </div>
 
-        <form class="form" onsubmit="return false;">
+        <form class="form" id="contactForm">
           <div class="field">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name">
+            <input id="name" name="name" type="text" placeholder="Your name" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@company.com">
+            <input id="email" name="email" type="email" placeholder="you@company.com" required>
           </div>
           <div class="field">
             <label for="message">Project details</label>
-            <textarea id="message" placeholder="What are you building?"></textarea>
+            <textarea id="message" name="message" placeholder="What are you building?" required></textarea>
           </div>
           <button class="btn btn-primary" type="submit">Send message →</button>
+          <p id="formStatus" style="font-family:var(--mono); font-size:12.5px; margin-top:2px; display:none;"></p>
         </form>
       </div>
     </section>
@@ -843,6 +858,34 @@
       });
     }, {rootMargin:'-40% 0px -50% 0px'});
     sections.forEach(s=>io.observe(s));
+
+   document.getElementById('contactForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById('formStatus');
+      const btn = form.querySelector('button');
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://formspree.io/f/mnpqqebe', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        if (res.ok) {
+          status.textContent = '✓ Message sent — I\'ll reply within a day.';
+          status.style.color = 'var(--green)';
+          form.reset();
+        } else {
+          throw new Error('Failed');
+        }
+      } catch (err) {
+        status.textContent = '✗ Something went wrong — email me directly instead.';
+        status.style.color = 'var(--rust)';
+      }
+      status.style.display = 'block';
+      btn.textContent = 'Send message →';
+    });
   </script>
 
 </body>
